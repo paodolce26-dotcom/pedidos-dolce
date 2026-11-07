@@ -43,10 +43,10 @@ function cartHTML() {
 function formHTML() {
   return `<h2>Tus datos</h2><form class="panel" id="form" autocomplete="on">
   <label class="f" for="f-name">Tu nombre</label><input type="text" id="f-name" name="name" required maxlength="80" value="${esc(draft.name)}" placeholder="Ej. Laura Pérez">
-  <label class="f" for="f-loc">¿Dónde te lo entrego?</label><input type="text" id="f-loc" name="loc" required maxlength="200" value="${esc(draft.loc)}" placeholder="Ej. CDA P900, o dirección con barrio">
+  <label class="f" for="f-loc">¿Dónde te lo entrego?</label><input type="text" id="f-loc" name="loc" required maxlength="200" value="${esc(draft.loc)}" placeholder="Ej. dirección con barrio">
   <label class="f" for="f-wa">WhatsApp <small>(opcional)</small></label><input type="tel" id="f-wa" name="wa" inputmode="tel" maxlength="25" value="${esc(draft.wa)}" placeholder="300 000 0000">
   <label class="f" for="f-notes">Algo más que deba saber <small>(opcional)</small></label><textarea id="f-notes" name="notes" maxlength="400">${esc(draft.notes)}</textarea>
-  <div class="note"><b>Fecha de entrega:</b> yo la confirmo según el día que voy a tu sede o zona. Si dejas tu WhatsApp, te escribo ahí.</div>
+  <div class="note"><b>Fecha de entrega:</b> yo la confirmo según el día que voy a tu dirección. Si dejas tu WhatsApp, te escribo ahí.</div>
   <h3 style="font-size:1.1rem;margin-top:18px">Cómo pagar</h3>
   <p style="margin:4px 0">Nequi, Llave o transferencia al mismo número:</p>
   <div class="pay"><b>${PAGO}</b><button type="button" class="btn ghost sm" id="copy">Copiar número</button></div>
